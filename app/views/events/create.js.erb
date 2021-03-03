@@ -1,0 +1,3 @@
+// renderした結果をjメソッドに渡してjsで扱えるようにする
+// errorsというidを持つDOMを使用してHTMLに変換
+document.getElementById("errors").innerHTML = "<%= j render("errors", errors: @event.errors) %>"
